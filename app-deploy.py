@@ -11,7 +11,7 @@ from camera_input_live import camera_input_live
 import cv2
 
 
-def play_video(video_source):
+def play_video(video_source)
     camera = cv2.VideoCapture(video_source)
     fps = camera.get(cv2.CAP_PROP_FPS)
     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.mp4')
