@@ -10,6 +10,12 @@ import moviepy.editor as mpy
 from camera_input_live import camera_input_live
 import cv2
 
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 def play_video(video_source):
     camera = cv2.VideoCapture(video_source)
