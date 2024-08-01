@@ -48,13 +48,7 @@ def play_video(video_source):
 
     st.video(temp_file.name)
 
-st.set_page_config(
-    page_title = "AI Fire Safety Project", 
-    page_icon = ":fire:",
-    layout = "centered", 
-    initial_sidebar_state = "expanded")
 
-st.title("AI Smoke and Fire Detection :fire:")
 
 st.sidebar.header("Type")
 source_radio = st.sidebar.radio("Select Source", ["IMAGE", "VIDEO", "WEBCAM"])
@@ -111,7 +105,13 @@ if source_radio == "WEBCAM":
 
     st.image(visualized_image, channels = "BGR")
  
+st.set_page_config(
+    page_title = "AI Fire Safety Project", 
+    page_icon = ":fire:",
+    layout = "centered", 
+    initial_sidebar_state = "expanded")
 
+st.title("AI Smoke and Fire Detection :fire:")
 
 
 
