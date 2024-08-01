@@ -10,6 +10,13 @@ from camera_input_live import camera_input_live
 
 import cv2
 
+st.set_page_config(
+    page_title = "AI Fire Safety Project", 
+    page_icon = ":fire:",
+    layout = "centered", 
+    initial_sidebar_state = "expanded")
+
+st.title("AI Smoke and Fire Detection :fire:")
 
 
 def play_video(video_source):
@@ -105,13 +112,6 @@ if source_radio == "WEBCAM":
 
     st.image(visualized_image, channels = "BGR")
  
-st.set_page_config(
-    page_title = "AI Fire Safety Project", 
-    page_icon = ":fire:",
-    layout = "centered", 
-    initial_sidebar_state = "expanded")
-
-st.title("AI Smoke and Fire Detection :fire:")
 
 
 
